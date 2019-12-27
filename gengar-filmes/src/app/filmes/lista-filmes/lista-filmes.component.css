@@ -1,0 +1,13 @@
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.wrapper table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
