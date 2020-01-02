@@ -1,0 +1,50 @@
+<h2 mat-dialog-title>Adicionar novo filme</h2>
+<mat-dialog-content class="mat-typography">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-form-field>
+      <input matInput name="titulo" id="titulo" placeholder="Título" [(ngModel)]="novoFilme.tituto">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select matInput name="genero" id="genero"  placeholder="Gênero" [(ngModel)]="novoFilme.genero">
+        <mat-option *ngFor="let genero of generos" value="{{genero}}">{{genero}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Data">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Imagem">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Trailer">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Diretor">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Escritor">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Elenco">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Sinopse">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Avaliação">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Duração">
+    </mat-form-field> 
+
+
+    <button mat-button mat-dialog-close>Fechar</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial type="submit">
+      Salvar
+    </button>
+  </form>
+</mat-dialog-content>
+
+
+

@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtrar...">
+  </mat-form-field>
+  <table class="mat-table">
+    <tr class="mat-header-row">
+      <th class="mat-header-cell">Título</th>
+      <th class="mat-header-cell">Genêro</th>
+      <th class="mat-header-cell">Duração</th>
+      <th class="mat-header-cell">Elenco</th>
+      <th class="mat-header-cell">Avaliação</th>
+    </tr>
+    <tr *ngFor="let filme of filmes;" class="mat-row">
+      <td class="mat-cell">{{filme.tituto}}</td>
+      <td class="mat-cell">{{filme.genero}}</td>
+      <td class="mat-cell">{{filme.duracao}}</td>
+      <td class="mat-cell">{{filme.elenco}}</td>
+      <td class="mat-cell">{{filme.avaliacao}}</td>
+    </tr>
+  </table>
+</div>

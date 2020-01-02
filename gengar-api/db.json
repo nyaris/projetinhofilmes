@@ -629,7 +629,59 @@
       "sinopse": "Vinte e sete anos depois dos eventos que chocaram os adolescentes que faziam parte do Clube dos Perdedores, os amigos realizam uma reunião. No entanto, o reencontro se torna uma verdadeira e sangrenta batalha quando Pennywise, o palhaço, retorna.",
       "avaliacao": "6,7",
       "duracao": "2h 49min"
+    },
+    {
+      "id": "46",
+      "tituto": "Felipe",
+      "genero": "Ação",
+      "data": "",
+      "imagem": "",
+      "trailer": "",
+      "diretor": "",
+      "escritor": "",
+      "elenco": "",
+      "sinopse": "",
+      "avaliacao": "",
+      "duracao": ""
+    },
+    {
+      "id": "47",
+      "tituto": "Diego",
+      "genero": "Ação",
+      "data": "",
+      "imagem": "",
+      "trailer": "",
+      "diretor": "",
+      "escritor": "",
+      "elenco": "",
+      "sinopse": "",
+      "avaliacao": "",
+      "duracao": ""
+    },
+    {
+      "id": "48",
+      "tituto": "Teste",
+      "genero": "Live Action",
+      "data": "",
+      "imagem": "",
+      "trailer": "",
+      "diretor": "",
+      "escritor": "",
+      "elenco": "",
+      "sinopse": "",
+      "avaliacao": "",
+      "duracao": ""
     }
   ],
-  "generos": ["Ação", "Aventura", "Comédia", "Documentário", "Drama", "Kids", "Ficção Científica", "Romance", "Terror" ]
+  "generos": [
+    "Ação",
+    "Aventura",
+    "Comédia",
+    "Documentário",
+    "Drama",
+    "Kids",
+    "Ficção Científica",
+    "Romance",
+    "Terror"
+  ]
 }

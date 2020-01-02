@@ -1,0 +1,37 @@
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.mat-mini-fab {
+  height: 25px;
+  margin-left: 20px;
+  margin-top: 1.25em;
+  width: 25px;
+}
+
+.mat-mini-fab::before {
+  background-color: #fff;
+  content:'';
+  display: block;
+  height: 2px;
+  left: 7.5px;
+  position: absolute;
+  top: 11.5px;
+  width: 10px;
+}
+
+.mat-mini-fab::after {
+  background-color: #fff;
+  content:'';
+  display: block;
+  height: 10px;
+  left: 11.5px;
+  position: absolute;
+  top: 7.5px;
+  width: 2px;
+}
