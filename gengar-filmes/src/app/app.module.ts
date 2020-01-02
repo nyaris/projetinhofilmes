@@ -13,14 +13,18 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FilmesComponent } from './filmes/filmes/filmes.component';
 import { ListaFilmesComponent } from './filmes/lista-filmes/lista-filmes.component';
 import { NovoFilmeComponent } from './filmes/novo-filme/novo-filme.component'
 
 @NgModule({
   declarations: [
     AppComponent,
+    CarouselComponent,
     DashboardComponent,
+    FilmesComponent,
     ListaFilmesComponent,
     NovoFilmeComponent
   ],
