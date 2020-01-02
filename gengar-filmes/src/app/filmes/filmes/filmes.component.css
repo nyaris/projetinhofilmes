@@ -1,0 +1,31 @@
+img{
+    width: 200px;
+    height: 200px;
+    position: relative; 
+}
+#nome{
+    position: relative;
+    left: -35px;
+    top: -50px;
+    color: white;
+    font-weight: bold;
+}
+#duracao{
+    position: relative;
+    left: -145px;
+    top: -30px;
+    color: white;
+    font-weight: bold;
+}
+img:hover {
+    filter: blur(3px);
+}
+#genero{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td{
+    width: 200px;
+}
+
