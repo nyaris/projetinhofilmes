@@ -9,16 +9,8 @@
         <mat-option *ngFor="let genero of generos" value="{{genero}}">{{genero}}</mat-option>
       </mat-select>
     </mat-form-field>
-    <button mat-button mat-dialog-close>Fechar</button>
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial type="submit">
-      Salvar
-    </button>
-  </form>
-</mat-dialog-content>
 
-
-
-<!-- <mat-form-field>
+    <mat-form-field>
       <input matInput placeholder="Data">
     </mat-form-field>
     <mat-form-field>
@@ -44,4 +36,15 @@
     </mat-form-field>
     <mat-form-field>
       <input matInput placeholder="Duração">
-    </mat-form-field>  -->
+    </mat-form-field> 
+
+
+    <button mat-button mat-dialog-close>Fechar</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial type="submit">
+      Salvar
+    </button>
+  </form>
+</mat-dialog-content>
+
+
+
