@@ -1,4 +1,4 @@
-export interface Filme {
+export class Filme {
   "id": string;
   "tituto": string;
   "genero": string;

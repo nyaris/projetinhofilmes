@@ -1,6 +1,6 @@
-import { Component, OnInit, NgModule } from '@angular/core';
-import { Filme } from '../filmes/filme';
-import { CallService } from '../services/call.service';
+import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { NovoFilmeComponent } from '../filmes/novo-filme/novo-filme.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,9 +9,16 @@ import { CallService } from '../services/call.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
-  
+  addFilme() {
+    const dialogRef = this.dialog.open(NovoFilmeComponent);
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(`Dialog result: ${result}`);
+    // });
+  }
 }

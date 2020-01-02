@@ -1,31 +1,43 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
-import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ListaFilmesComponent } from './filmes/lista-filmes/lista-filmes.component'
+import { ListaFilmesComponent } from './filmes/lista-filmes/lista-filmes.component';
+import { NovoFilmeComponent } from './filmes/novo-filme/novo-filme.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    ListaFilmesComponent
+    ListaFilmesComponent,
+    NovoFilmeComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
+    FormsModule,
     HttpClientModule,
+    MatButtonModule,
+    MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
     MatTableModule
   ],
+  entryComponents: [NovoFilmeComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
