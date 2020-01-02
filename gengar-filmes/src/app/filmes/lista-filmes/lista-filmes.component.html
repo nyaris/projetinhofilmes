@@ -2,39 +2,20 @@
   <mat-form-field>
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtrar...">
   </mat-form-field>
-  
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    <!-- Titulo Column -->
-    <ng-container matColumnDef="tituto">
-      <th mat-header-cell *matHeaderCellDef> Título </th>
-      <td mat-cell *matCellDef="let filme"> {{filme.tituto}} </td>
-    </ng-container>
-  
-    <!-- Genêro Column -->
-    <ng-container matColumnDef="genero">
-      <th mat-header-cell *matHeaderCellDef> Genêro </th>
-      <td mat-cell *matCellDef="let filme"> {{filme.genero}} </td>
-    </ng-container>
-  
-    <!-- Duração Column -->
-    <ng-container matColumnDef="duracao">
-      <th mat-header-cell *matHeaderCellDef> Duração </th>
-      <td mat-cell *matCellDef="let filme"> {{filme.duracao}} </td>
-    </ng-container>
-  
-    <!-- Elenco Column -->
-    <ng-container matColumnDef="elenco">
-      <th mat-header-cell *matHeaderCellDef> Elenco </th>
-      <td mat-cell *matCellDef="let filme"> {{filme.elenco}} </td>
-    </ng-container>
-  
-    <!-- Avaliação Column -->
-    <ng-container matColumnDef="avaliacao">
-      <th mat-header-cell *matHeaderCellDef> Avaliação </th>
-      <td mat-cell *matCellDef="let filme"> {{filme.avaliacao}} </td>
-    </ng-container>
-  
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  <table class="mat-table">
+    <tr class="mat-header-row">
+      <th class="mat-header-cell">Título</th>
+      <th class="mat-header-cell">Genêro</th>
+      <th class="mat-header-cell">Duração</th>
+      <th class="mat-header-cell">Elenco</th>
+      <th class="mat-header-cell">Avaliação</th>
+    </tr>
+    <tr *ngFor="let filme of filmes;" class="mat-row">
+      <td class="mat-cell">{{filme.tituto}}</td>
+      <td class="mat-cell">{{filme.genero}}</td>
+      <td class="mat-cell">{{filme.duracao}}</td>
+      <td class="mat-cell">{{filme.elenco}}</td>
+      <td class="mat-cell">{{filme.avaliacao}}</td>
+    </tr>
   </table>
 </div>
