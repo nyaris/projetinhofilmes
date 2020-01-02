@@ -1,10 +1,10 @@
-<table><!-- *ngFor Genero Aqui -->
-    <h2 id="genero">{{genero}}</h2>
+<table *ngFor="let filme of filmes"><!-- *ngFor Genero Aqui -->
+    <h2 id="genero"> {{filme.genero}}</h2>
     <tr align="right">
-        <td><!-- *ngFor Titulo Aqui -->
-            <img src={{imagem}}>
-            <label id="nome" class={{duracao}}>Nome do Filme</label>
-            <label id="duracao" class={{duracao}}>Tempo</label>
+        <td *ngFor="let filme of filmes"><!-- *ngFor Titulo Aqui -->
+            <img src={{filme.imagem}}>
+            <label id="nome" class={{nome_filme}}>{{filme.tituto}}</label>
+            <label id="duracao" class={{duracao}}>{{filme.duracao}}</label>
         </td>
     </tr>
 </table>
