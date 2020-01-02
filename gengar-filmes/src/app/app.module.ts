@@ -17,7 +17,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FilmesComponent } from './filmes/filmes/filmes.component';
 import { ListaFilmesComponent } from './filmes/lista-filmes/lista-filmes.component';
-import { NovoFilmeComponent } from './filmes/novo-filme/novo-filme.component'
+import { NovoFilmeComponent } from './filmes/novo-filme/novo-filme.component';
+import { UserHomeComponent } from './page-layouts/user-home/user-home.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NovoFilmeComponent } from './filmes/novo-filme/novo-filme.component'
     DashboardComponent,
     FilmesComponent,
     ListaFilmesComponent,
-    NovoFilmeComponent
+    NovoFilmeComponent,
+    UserHomeComponent
   ],
   imports: [
     AppRoutingModule,
