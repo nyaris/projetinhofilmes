@@ -24,12 +24,23 @@ export class CallService {
   }
 
   recebeAPI() {
-    this.chamaAPI().subscribe((data: Array<Filme>) => {
-      data.forEach(filme => this.filmes.push(filme));
-    });
+    this.filmes.length = 0;
+    this.chamaAPI().subscribe(
+      (data: Array<Filme>) => data.forEach(filme => this.filmes.push(filme))
+      );
   }
 
   postAPI(novoFilme) {
     this.http.post(`${this.baseUrl}/filmes/`, novoFilme, httpOptions).subscribe((data: Filme) => this.filmes.push(data));
   }
+
+  deleteAPI(id) {
+    this.http.delete(`${this.baseUrl}/filmes/${id}`, httpOptions).subscribe(
+      (data: Filme) => {
+        const exclued = this.filmes.indexOf(this.filmes.find(filme => filme.id === id));
+        this.filmes.slice(exclued-1, exclued);
+        this.recebeAPI();
+      });
+  }
+
 }

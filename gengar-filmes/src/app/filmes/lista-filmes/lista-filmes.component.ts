@@ -17,6 +17,15 @@ export class ListaFilmesComponent implements OnInit {
     this.callService.recebeAPI();
   }
 
+  editaFilme() {
+
+  }
+
+  deletaFilme(filme) {
+    const id = filme.target.parentElement.parentElement.firstChild.innerText;
+    this.callService.deleteAPI(id);
+  }
+
   // displayedColumns: string[] = ['tituto', 'genero', 'duracao', 'elenco', 'avaliacao'];
   // dataSource = new MatTableDataSource(this.callService.teste);
 

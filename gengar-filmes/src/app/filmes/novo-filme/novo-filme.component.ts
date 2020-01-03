@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CallService } from 'src/app/services/call.service';
-import { Filme } from '../filme';
 
 @Component({
   selector: 'app-novo-filme',
@@ -10,7 +9,7 @@ import { Filme } from '../filme';
 export class NovoFilmeComponent implements OnInit {
 
   novoFilme = {
-    "id": (this.callService.filmes.length + 1).toString(),
+    "id": +this.callService.filmes[this.callService.filmes.length - 1].id + 1,
     "tituto": '',
     "genero": '',
     "data": '',
@@ -24,15 +23,14 @@ export class NovoFilmeComponent implements OnInit {
     "duracao": '',
   }
 
+  generos = this.callService.generos;
+
   constructor(private callService: CallService) { }
 
   ngOnInit() {
   }
 
-  generos = this.callService.generos;
-
   onSubmit() {
-    console.log(this.novoFilme);
     this.callService.postAPI(JSON.stringify(this.novoFilme));
   }
 

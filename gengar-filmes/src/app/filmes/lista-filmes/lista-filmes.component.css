@@ -41,3 +41,43 @@ th.mat-header-cell:first-child, td.mat-cell:first-child, td.mat-footer-cell:firs
 th.mat-header-cell:last-child, td.mat-cell:last-child, td.mat-footer-cell:last-child {
   padding-right: 24px;
 }
+
+.mat-mini-fab {
+  height: 20px;
+  width: 20px;
+}
+
+#edit::after {
+  background-color: #fff;
+  content:'';
+  display: block;
+  height: 2px;
+  left: 5px;
+  position: absolute;
+  top: 9px;
+  width: 10px;
+}
+
+#delete::before {
+  background-color: #fff;
+  content:'';
+  display: block;
+  height: 2px;
+  left: 5px;
+  position: absolute;
+  top: 9px;
+  transform: rotate(45deg);
+  width: 10px;
+}
+
+#delete::after {
+  background-color: #fff;
+  content:'';
+  display: block;
+  height: 10px;
+  left: 9px;
+  position: absolute;
+  top: 5px;
+  transform: rotate(45deg);
+  width: 2px;
+}

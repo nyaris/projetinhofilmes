@@ -9,33 +9,32 @@
         <mat-option *ngFor="let genero of generos" value="{{genero}}">{{genero}}</mat-option>
       </mat-select>
     </mat-form-field>
-
     <mat-form-field>
-      <input matInput placeholder="Data">
+      <input matInput name="data" id="data" placeholder="Data" [(ngModel)]="novoFilme.data">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Imagem">
+      <input matInput name="imagem" id="imagem" placeholder="Imagem" [(ngModel)]="novoFilme.imagem">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Trailer">
+      <input matInput name="trailer" id="trailer" placeholder="Trailer" [(ngModel)]="novoFilme.trailer">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Diretor">
+      <input matInput name="diretor" id="diretor" placeholder="Diretor" [(ngModel)]="novoFilme.diretor">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Escritor">
+      <input matInput name="escritor" id="escritor" placeholder="Escritor" [(ngModel)]="novoFilme.escritor">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Elenco">
+      <input matInput name="elenco" id="elenco" placeholder="Elenco" [(ngModel)]="novoFilme.elenco">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Sinopse">
+      <input matInput name="sinopse" id="sinopse" placeholder="Sinopse" [(ngModel)]="novoFilme.sinopse">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Avaliação">
+      <input matInput name="avaliacao" id="avaliacao" placeholder="Avaliação" [(ngModel)]="novoFilme.avaliacao">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Duração">
+      <input matInput name="duracao" id="duracao" placeholder="Duração" [(ngModel)]="novoFilme.duracao">
     </mat-form-field> 
 
 

@@ -15,10 +15,6 @@ export class DashboardComponent implements OnInit {
   }
 
   addFilme() {
-    const dialogRef = this.dialog.open(NovoFilmeComponent);
-
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log(`Dialog result: ${result}`);
-    // });
+    this.dialog.open(NovoFilmeComponent);
   }
 }
