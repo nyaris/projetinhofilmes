@@ -34,6 +34,11 @@ export class CallService {
     this.http.post(`${this.baseUrl}/filmes/`, novoFilme, httpOptions).subscribe((data: Filme) => this.filmes.push(data));
   }
 
+  editarAPI(id) {
+    const filmeEditar = this.filmes.indexOf(this.filmes.find(filme => filme.id === id));
+    console.log(filmeEditar);
+  }
+
   deleteAPI(id) {
     this.http.delete(`${this.baseUrl}/filmes/${id}`, httpOptions).subscribe(
       (data: Filme) => {

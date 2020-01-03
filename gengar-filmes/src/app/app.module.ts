@@ -20,6 +20,7 @@ import { ListaFilmesComponent } from './filmes/lista-filmes/lista-filmes.compone
 import { LoginComponent } from './login/login.component';
 import { NovoFilmeComponent } from './filmes/novo-filme/novo-filme.component'
 import { UserHomeComponent } from './page-layouts/user-home/user-home.component';
+import { EditaFilmesComponent } from './filmes/edita-filmes/edita-filmes.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UserHomeComponent } from './page-layouts/user-home/user-home.component'
     ListaFilmesComponent,
     LoginComponent,
     NovoFilmeComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    EditaFilmesComponent
   ],
   imports: [
     AppRoutingModule,
