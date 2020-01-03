@@ -17,8 +17,9 @@ export class ListaFilmesComponent implements OnInit {
     this.callService.recebeAPI();
   }
 
-  editaFilme() {
-
+  editaFilme(filme) {
+    const id = filme.target.parentElement.parentElement.firstChild.innerText;
+    this.callService.editarAPI(id);
   }
 
   deletaFilme(filme) {

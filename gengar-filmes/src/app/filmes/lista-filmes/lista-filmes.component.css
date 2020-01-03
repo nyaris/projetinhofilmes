@@ -13,6 +13,7 @@ mat-form-field {
 }
 
 table.mat-table {
+  opacity: .9;
   border-spacing: 0;
 }
 
@@ -24,11 +25,18 @@ tr.mat-row, tr.mat-footer-row {
   height: 48px;
 }
 
+tr.mat-row:hover {
+  background-color: rgba(103, 58, 183, .1);
+  transition: .1s;
+}
+
 th.mat-header-cell {
   text-align: left;
 }
 
 th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  color: #673ab7;
+  font-size: 14px;
   padding: 0;
   border-bottom-width: 1px;
   border-bottom-style: solid;

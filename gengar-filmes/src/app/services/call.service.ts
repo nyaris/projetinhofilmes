@@ -40,7 +40,7 @@ export class CallService {
         const exclued = this.filmes.indexOf(this.filmes.find(filme => filme.id === id));
         this.filmes.slice(exclued-1, exclued);
         this.recebeAPI();
-      });
+    });
   }
 
 }

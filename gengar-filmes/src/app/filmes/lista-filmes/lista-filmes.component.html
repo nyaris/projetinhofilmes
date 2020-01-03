@@ -18,7 +18,7 @@
       <td class="mat-cell">{{filme.genero}}</td>
       <td class="mat-cell">{{filme.duracao}}</td>
       <td class="mat-cell">{{filme.avaliacao}}</td>
-      <td class="mat-cell"><button mat-mini-fab color="accent" (click)="editaFilme()" id="edit"></button></td>
+      <td class="mat-cell"><button mat-mini-fab color="accent" (click)="editaFilme($event)" id="edit" routerLink="/editar"></button></td>
       <td class="mat-cell"><button mat-mini-fab color="warn" (click)="deletaFilme($event)" id="delete"></button></td>
     </tr>
   </table>
