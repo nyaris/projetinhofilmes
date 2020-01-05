@@ -571,5 +571,12 @@
     "Ficção Científica",
     "Romance",
     "Terror"
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "nina",
+      "senha": "123"
+    }
   ]
 }

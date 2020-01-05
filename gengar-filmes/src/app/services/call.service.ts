@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Filme } from '../filmes/filme';
+import { Usuario } from '../login/usuario'
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -48,4 +49,8 @@ export class CallService {
     });
   }
 
+  getUsuario(username) {
+    const params = new HttpParams().set('username', username);
+    return this.http.get(`${this.baseUrl}/usuarios`, {params});
+  }
 }
