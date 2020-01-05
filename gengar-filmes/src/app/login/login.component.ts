@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
       username: ['', Validators.required],
       senha: ['', Validators.required]
     })
-  }
+  } 
 
   login() : void {
     let username = this.loginForm.get("username").value;
@@ -31,12 +31,12 @@ export class LoginComponent implements OnInit {
           if(Array.isArray(usuarios) && usuarios.length) {
             usuarios.forEach(usuario => {
               if(senha == usuario.senha) {
-                this.router.navigate(['filmes']);
+                this.router.navigate(['home']);
               } else  {
-                alert("Senha incorreta !!");
-              }
+                alert("Senha incorreta !!"); 
+              } 
             })
-          }
+          } 
         }
       );
   }

@@ -16,7 +16,7 @@
     width:95%;
     height:100%;
     pointer-events:none;
-    opacity:0;
+    opacity: 0.9; 
     transition: .4s;
 }
 .gallery .control-operator{
@@ -24,7 +24,7 @@
 }
 .gallery .control-operator:target~.item{
     pointer-events:none;
-    opacity:0;
+    opacity:0.9; 
     animation:none;
 }
 .gallery .control-operator:target~.controls .control-button{
